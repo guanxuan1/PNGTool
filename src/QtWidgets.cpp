@@ -1,4 +1,4 @@
-#include "QtWidgets.h"
+﻿#include "QtWidgets.h"
 #include "Pic_data.h"
 #include <QDebug>
 #include "ui_QtWidgets.h"
@@ -79,7 +79,7 @@ void QtWidgets::Initmenu()
     //初始化下拉菜单
     actionIpSet = new QAction("翻转", this);
     actionAuthorize = new QAction("选择图片", this);
-    actionSaveas = new QAction("另存为", this);
+    actionSaveas = new QAction("另存图片",this);
     ui->menuView->addAction(actionIpSet);
     ui->menuView->addAction(actionAuthorize);
     ui->menuView->addAction(actionSaveas);

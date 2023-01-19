@@ -6,3 +6,5 @@
 
 /.vs/
 /x64/
+# Build
+Build/
