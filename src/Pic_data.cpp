@@ -51,7 +51,7 @@ int Pic_data::LoadPNGImage(const char* file_name)
 	m_pixeldata = new unsigned char[m_row_bytes * m_height];
 	//graph->SetBitDepth(png_get_bit_depth(png_ptr, info_ptr));
 	m_row_pointers = png_get_rows(png_ptr, info_ptr);
-
+	m_bit_depth = png_get_bit_depth(png_ptr, info_ptr);
 	//Pic_data::m_width = png_get_image_width(png, infop);
 	//Pic_data::m_height = png_get_image_height(png, infop);
 	//Pic_data::m_colortype = png_get_color_type(png, infop);
